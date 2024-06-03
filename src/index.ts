@@ -22,9 +22,18 @@ type ColorName =
 
 export function getColorIOS(colorName: ColorName): string | null {
   if (Platform.OS !== "ios") return null;
-  return ExpoColorToHexModule.getColor(colorName);
+  const ret = ExpoColorToHexModule.getColor(colorName);
+  if (!ret.match(/#[0-9a-f]{6}/i)) {
+    return null;
+  }
+  return ret;
 }
 export function getColorAndroid(colorName: string): string | null {
   if (Platform.OS !== "android") return null;
-  return ExpoColorToHexModule.getColor(colorName);
+  try {
+    return ExpoColorToHexModule.getColor(colorName);
+  } catch {
+    return null;
+  }
+  
 }
