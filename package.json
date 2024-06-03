@@ -38,6 +38,6 @@
   },
   "peerDependencies": {
     "expo": "*",
-    "react": "*",
+    "react": "*"
   }
 }
