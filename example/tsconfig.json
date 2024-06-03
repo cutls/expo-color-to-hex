@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-color-to-hex": ["../src/index"],
+      "expo-color-to-hex/*": ["../src/*"]
+    }
+  }
+}
