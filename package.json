@@ -28,7 +28,9 @@
   "author": "cutls <p@cutls.dev> (https://github.com/cutls)",
   "license": "MIT",
   "homepage": "https://github.com/cutls/expo-color-to-hex#readme",
-  "dependencies": {},
+  "dependencies": {
+    "react-native": "*"
+  },
   "devDependencies": {
     "@types/react": "^18.0.25",
     "expo-module-scripts": "^3.5.2",
@@ -37,6 +39,5 @@
   "peerDependencies": {
     "expo": "*",
     "react": "*",
-    "react-native": "*"
   }
 }
